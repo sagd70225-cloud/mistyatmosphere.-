@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MISTY ATMOSPHERE — PUBG Clan</title>
+<meta name="description" content="Portfolio resmi MISTY ATMOSPHERE PUBG Clan">
+<style>
+:root{--bg:#030507;--card:#0a0e14;--text:#f4f7fb;--muted:#9aa7b8;--red:#ff3153;--blue:#1597ff;--cyan:#18d9ff;--line:#1b2735}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:radial-gradient(circle at 20% 10%,#26070e,transparent 32%),radial-gradient(circle at 85% 30%,#061d36,transparent 35%),var(--bg);color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:99;background:rgba(3,5,7,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font-weight:1000;letter-spacing:1px}.brand img{width:45px;height:45px;border-radius:9px;object-fit:cover}.brand b{color:var(--red)}
+.links{display:flex;gap:4px}.links a{padding:10px 9px;font-size:11px;font-weight:900;letter-spacing:.4px;color:#bdc7d5;border-radius:7px}.links a:hover,.links a.active{color:#fff;background:#101822}
+.menu{display:none;background:none;color:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:7px;font-size:18px}
+.hero{min-height:100vh;padding-top:74px;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:74px 0 0;background:linear-gradient(90deg,rgba(3,5,7,.98) 0%,rgba(3,5,7,.68) 42%,rgba(3,5,7,.28) 100%),url("hero.png") center/cover no-repeat;opacity:.85;z-index:-1}
+.hero-content{max-width:700px;padding:80px 0}.tag{display:inline-block;border:1px solid #27384a;background:#0b1119cc;padding:7px 13px;border-radius:99px;font-size:11px;font-weight:900;letter-spacing:1.5px}
+h1{font-size:clamp(48px,8vw,92px);line-height:.9;letter-spacing:-4px;margin:22px 0}h1 .r{color:var(--red)}h1 .b{color:var(--blue)}
+.lead{color:#c0cad6;max-width:650px;font-size:17px}.buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}.btn{padding:12px 18px;border-radius:8px;border:1px solid var(--line);font-size:12px;font-weight:1000}.primary{background:#fff;color:#050609}.redbtn{border-color:#ff3153;background:#ff315314}.bluebtn{border-color:#1597ff;background:#1597ff12}
+section{padding:90px 0}.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:25px}.eyebrow{color:var(--red);font-size:11px;font-weight:1000;letter-spacing:2px}.head h2{font-size:clamp(30px,5vw,50px);line-height:1.05}.head p{max-width:500px;color:var(--muted);font-size:13px}
+.about{display:grid;grid-template-columns:1fr 1.6fr;gap:18px}.panel{background:linear-gradient(145deg,#0d141d,#070a0f);border:1px solid var(--line);border-radius:16px;padding:27px}.panel h3{margin-bottom:10px}.panel p{color:var(--muted);font-size:14px}.values{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:20px}.value{border:1px solid var(--line);padding:14px;border-radius:10px;text-align:center;font-size:11px;font-weight:900}
+.roles{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.role{min-height:230px;border:1px solid var(--line);border-radius:14px;padding:18px;background:#080c12;display:flex;flex-direction:column;justify-content:end;position:relative;overflow:hidden}.role:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 20%,rgba(21,151,255,.18),transparent 45%)}.role.red:before{background:radial-gradient(circle at 50% 20%,rgba(255,49,83,.2),transparent 45%)}.role>*{position:relative}.role-icon{font-size:34px;margin-bottom:auto}.role small{color:#7f8d9e;text-transform:uppercase;letter-spacing:1.3px;font-size:9px;font-weight:900}.role h3{font-size:20px;margin:3px 0}.role p{font-size:11px;color:var(--muted)}
+.register-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.register{padding:32px;border-radius:18px;border:1px solid var(--line);min-height:270px;position:relative;overflow:hidden}.register.comp{background:linear-gradient(110deg,#25070e,#0b0c12 60%,#16060a)}.register.fun{background:linear-gradient(110deg,#061a2d,#090c12 60%,#061b2b)}.register .big{font-size:42px}.register h3{font-size:27px}.register p{color:#adb9c7;font-size:13px;max-width:500px;margin:7px 0 20px}.form{display:none;margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}.form.show{display:block}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.form input,.form select,.form textarea{width:100%;background:#05080c;border:1px solid #243242;color:#fff;padding:11px;border-radius:7px;outline:none}.form textarea{grid-column:1/-1;min-height:90px}.submit{margin-top:10px;width:100%;border:0;padding:12px;border-radius:7px;font-weight:1000;cursor:pointer}.submit.red{background:var(--red);color:#fff}.submit.blue{background:var(--blue);color:#fff}
+.timeline{display:grid;gap:10px}.event{display:flex;gap:20px;padding:17px;border:1px solid var(--line);border-radius:10px;background:#080c11}.event b{min-width:95px;color:var(--blue);font-size:11px}.event p{color:var(--muted);font-size:12px}
+footer{border-top:1px solid var(--line);padding:35px 0;color:#7f8b9b;font-size:11px}.foot{display:flex;justify-content:space-between;gap:20px}
+.toast{position:fixed;right:18px;bottom:18px;background:#101820;border:1px solid #2a3c4d;padding:13px 17px;border-radius:9px;display:none;z-index:200;font-size:12px}
+@media(max-width:1000px){.links{display:none;position:absolute;top:74px;left:0;right:0;background:#05080c;padding:10px;flex-direction:column;border-bottom:1px solid var(--line)}.links.show{display:flex}.links a{text-align:center}.menu{display:block}.roles{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}.values{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){section{padding:65px 0}.hero-content{padding:55px 0}.hero:before{background:linear-gradient(90deg,rgba(3,5,7,.94),rgba(3,5,7,.72)),url("hero.png") center/cover}.head{display:block}.head p{margin-top:10px}.register-grid{grid-template-columns:1fr}.roles{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.values{grid-template-columns:1fr 1fr}.foot{display:block}.foot div+div{margin-top:8px}h1{letter-spacing:-2px}}
+</style>
+</head>
+<body>
+<nav><div class="container nav">
+<a class="brand" href="#home"><img src="logo.jpg" alt="Logo"><span>MISTY <b>ATMOSPHERE</b></span></a>
+<button class="menu">☰</button>
+<div class="links">
+<a href="#home">HOME</a><a href="#informasi">INFORMASI</a><a href="#founder">FOUNDER</a><a href="#owner">OWNER</a><a href="#management">MANAGEMENT</a><a href="#captain">CAPTAIN CLAN</a><a href="#coleader">CO-LEADER CLAN</a><a href="#pendaftaran">PENDAFTARAN</a>
+</div></div></nav>
+
+<section id="home" class="hero"><div class="container"><div class="hero-content">
+<div class="tag">PUBG CLAN • MISTY ATMOSPHERE</div>
+<h1>MISTY<br><span class="r">ATMOS</span><span class="b">PHERE</span></h1>
+<p class="lead">More Than A Clan, We Are Family. Komunitas PUBG untuk player yang ingin berkembang, bermain bersama, dan mengejar kemenangan dalam atmosfer yang solid.</p>
+<div class="buttons"><a class="btn primary" href="#informasi">LIHAT PORTFOLIO</a><a class="btn redbtn" href="#pendaftaran">DAFTAR SEKARANG</a></div>
+</div></div></section>
+
+<section id="informasi"><div class="container">
+<div class="head"><div><div class="eyebrow">01 — INFORMASI</div><h2>Tentang Kami</h2></div><p>MISTY ATMOSPHERE berdiri dengan satu tujuan: menjadi wadah bagi player yang bersahabat, solid, dan memiliki visi besar di dunia esports.</p></div>
+<div class="about"><div class="panel"><h3>IDENTITAS CLAN</h3><p>Clan PUBG dengan fokus pada kekompakan, respect, progress, dan family. Kami membuka ruang untuk player yang ingin serius berkembang maupun sekadar mencari squad yang nyaman.</p><div class="values"><div class="value">◈ SOLID</div><div class="value">◈ RESPECT</div><div class="value">◈ PROGRESS</div><div class="value">◈ FAMILY</div></div></div>
+<div class="panel"><h3>VISI & MISI</h3><p><b style="color:#fff">Visi:</b> membangun komunitas PUBG yang aktif, sportif, dan berprestasi.</p><p style="margin-top:12px"><b style="color:#fff">Misi:</b> meningkatkan skill, komunikasi, strategi, mental bertanding, dan membangun lingkungan clan yang saling mendukung.</p></div></div>
+</div></section>
+
+<section id="founder"><div class="container"><div class="head"><div><div class="eyebrow">02 — FOUNDER</div><h2>Founder</h2></div><p>Pencetus visi dan identitas MISTY ATMOSPHERE.</p></div><div class="panel"><h3>MSTY・zeinx4U</h3><p>Ganti bagian ini dengan nama, foto, biodata singkat, dan sosial media founder.</p></div></div></section>
+<section id="owner"><div class="container"><div class="head"><div><div class="eyebrow">03 — OWNER</div><h2>Owner</h2></div><p>Pemilik dan pengarah perkembangan clan.</p></div><div class="panel"><h3>MSTY×NatzFLX</h3><p>Ganti bagian ini dengan nama, foto, biodata singkat, dan sosial media owner.</p></div></div></section>
+
+<section id="management"><div class="container"><div class="head"><div><div class="eyebrow">04 — MANAGEMENT</div><h2>Management</h2></div><p>Management khusus operasional yang mengatur kegiatan dan kebutuhan internal clan.</p></div>
+<div class="roles"><div class="role red"><div class="role-icon">♛</div><small>Management</small><h3>MSTY×Kesyaa</h3><p>Mengelola operasional dan koordinasi kegiatan clan.</p></div></div></div></section>
+
+<section id="captain"><div class="container"><div class="head"><div><div class="eyebrow">05 — CAPTAIN CLAN</div><h2>Captain Clan</h2></div><p>Pemimpin utama clan yang mengatur arah, koordinasi, dan kepemimpinan anggota.</p></div><div class="panel"><h3>MSTY×FelyxNATZ</h3><p>Captain Clan • Leadership • Koordinasi • Pengambilan Keputusan</p></div></div></section>
+<section id="coleader"><div class="container">
+<div class="head"><div><div class="eyebrow">06 — DIVISION</div><h2>COMPETITIF DAN FUN</h2></div>
+<p>Divisi dibagi menjadi 2 yaitu divisi Competitif dan Fun,dibawah ini adalah struktur Leader dan Co-Leader.</p></div>
+
+<div style="margin-bottom:14px"><div class="eyebrow" style="color:var(--red)">COMPETITIVE DIVISION — 1 LEADER & 2 CO-LEADER</div></div>
+<div class="roles" style="grid-template-columns:repeat(1,1fr);margin-bottom:28px">
+<div class="role red"><div class="role-icon">👑</div><small>Leader Competitive</small><h3>MSTY×FelyxNATZ</h3><p>Memimpin Divisi Competitive • Strategi dan Koordinasi</p></div>
+<div class="role red"><div class="role-icon">🏆</div><small>Co-leader Competitive 01</small><h3>MSTY×JaydenVGD</h3><p>Mendampingi Captain Competitive • Koordinasi Roster</p></div>
+<div class="role red"><div class="role-icon">🏆</div><small>Co-leader Competitive 02</small><h3>MSTY×NatzFLX</h3><p>Mendampingi Captain Competitive • Strategi Tim</p></div>
+</div>
+
+<div style="margin-bottom:14px"><div class="eyebrow" style="color:var(--blue)">FUN DIVISION — 1 LEADER & 1 CO-LEADER</div></div>
+<div class="roles" style="grid-template-columns:repeat(1,1fr)">
+<div class="role"><div class="role-icon">🎮</div><small>Leader Fun</small><h3>MSTY・Vintzy</h3><p>Memimpin Divisi Fun • Koordinasi Community</p></div>
+<div class="role"><div class="role-icon">🎮</div><small>Co-leader Fun</small><h3>MSTY・Yaya</h3><p>Mendampingi Leader Fun • Koordinasi Activity</p></div>
+</div>
+</div></section>
+
+<section id="pendaftaran"><div class="container"><div class="head"><div><div class="eyebrow">07 — PENDAFTARAN</div><h2>Bergabung Bersama Kami</h2></div><p>Pilih jalur yang sesuai dengan tujuanmu: Competitive untuk mengejar prestasi atau Fun untuk bermain santai dan membangun pertemanan.</p></div>
+<div class="register-grid">
+<div class="register comp"><div class="big">🏆</div><h3>PENDAFTARAN COMPETITIVE</h3><p>Bergabung dengan roster kompetitif kami untuk mengikuti scrim, turnamen, dan mengejar prestasi bersama MISTY ATMOSPHERE.</p><button class="btn redbtn" onclick="toggleForm('competitive')">DAFTAR COMPETITIVE →</button>
+<form id="competitive" class="form" onsubmit="submitForm(event,'Competitive')"><div class="form-grid"><input name="nama" required placeholder="Nama / IGN"><input name="kontak" required placeholder="WhatsApp / Discord"><select name="role" required><option value="">Pilih Role</option><option>IGL</option><option>Rusher</option><option>Support</option><option>Sniper</option><option>Flex</option></select><input name="idpubg" required placeholder="ID PUBG"><textarea name="keterangan" placeholder="Ceritakan pengalaman competitive / achievement"></textarea></div><button class="submit red">KIRIM PENDAFTARAN</button></form></div>
+<div class="register fun"><div class="big">🎮</div><h3>PENDAFTARAN FUN</h3><p>Ingin bermain santai, mencari teman baru, atau sekadar seru-seruan? Daftar ke tim Fun dan nikmati keseruan PUBG bersama.</p><button class="btn bluebtn" onclick="toggleForm('fun')">DAFTAR FUN →</button>
+<form id="fun" class="form" onsubmit="submitForm(event,'Fun')"><div class="form-grid"><input name="nama" required placeholder="Nama / IGN"><input name="kontak" required placeholder="WhatsApp / Discord"><select name="platform" required><option value="">Pilih Platform</option><option>Android</option><option>iOS</option><option>Emulator</option></select><input name="idpubg" required placeholder="ID PUBG"><textarea name="keterangan" placeholder="Alasan ingin bergabung"></textarea></div><button class="submit blue">KIRIM PENDAFTARAN</button></form></div>
+</div></div></section>
+
+<section><div class="container"><div class="head"><div><div class="eyebrow">ROADMAP</div><h2>Perjalanan Clan</h2></div><p>Contoh roadmap yang bisa kamu ubah sesuai perjalanan asli clan.</p></div><div class="timeline">
+<div class="event"><b>PHASE 01</b><div><strong>TEAM BUILDING</strong><p>Pembentukan roster, role assignment, dan penyamaan visi.</p></div></div>
+<div class="event"><b>PHASE 02</b><div><strong>SCRIM & TRAINING</strong><p>Latihan rotasi, komunikasi, strategi, dan evaluasi gameplay.</p></div></div>
+<div class="event"><b>PHASE 03</b><div><strong>TOURNAMENT</strong><p>Mengikuti kompetisi dan membangun rekam jejak prestasi.</p></div></div>
+</div></div></section>
+
+<footer><div class="container foot"><div>© <span id="year"></span> MISTY ATMOSPHERE • PUBG CLAN</div><div>Together in the <b style="color:var(--red)">MISTY</b> & Victory in the <b style="color:var(--blue)">ATMOSPHERE</b></div></div></footer>
+<div class="toast" id="toast"></div>
+<script>
+const menu=document.querySelector('.menu'),links=document.querySelector('.links');
+menu.onclick=()=>links.classList.toggle('show');
+document.querySelectorAll('.links a').forEach(a=>a.onclick=()=>links.classList.remove('show'));
+document.getElementById('year').textContent=new Date().getFullYear();
+function toggleForm(id){document.getElementById(id).classList.toggle('show')}
+function submitForm(e,type){
+  e.preventDefault();
+  const nomorWhatsApp = "6285877012190"; // GANTI dengan nomor WhatsApp admin
+  if(nomorWhatsApp.includes("X")){ alert("Silakan isi nomor WhatsApp admin terlebih dahulu."); return; }
+  const data = new FormData(e.target);
+  const pesan = ["📩 *PENDAFTARAN MISTY ATMOSPHERE*","","*Divisi:* "+type,"*Nama / IGN:* "+data.get("nama"),"*Kontak:* "+data.get("kontak"),"*ID PUBG:* "+data.get("idpubg"),type === "Competitive" ? "*Role:* "+data.get("role") : "*Platform:* "+data.get("platform"),"*Keterangan:* "+(data.get("keterangan")||"-")].join("\n");
+  window.open("https://wa.me/"+nomorWhatsApp+"?text="+encodeURIComponent(pesan),"_blank");
+  const t=document.getElementById('toast'); t.textContent='Data sudah disiapkan. Tekan KIRIM di WhatsApp.'; t.style.display='block'; setTimeout(()=>t.style.display='none',5000); e.target.reset();
+}
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){document.querySelectorAll('.links a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))}}),{rootMargin:'-35% 0px -55% 0px'});
+document.querySelectorAll('section[id]').forEach(s=>obs.observe(s));
+</script>
+</body>
+</html>
